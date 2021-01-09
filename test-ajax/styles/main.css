@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(161, 161, 161);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+}
+
+select {
+    margin: auto;
+    padding: 15px 25px;
+    background-color: aliceblue;
+    color: #000;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+select option{
+    color: #000;
+}
+
+.content {
+    margin: auto;
+    width: 500px;
+    height: 80vh;
+    text-align: center;
+    padding: 25px;
+    overflow-y: scroll;
+}
+
+.post {
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    box-shadow: #000000 0px 20px 20px 1px;
+    padding: 30px 35px;
+}
+
+.title-post {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.text-post {
+    width: 100%;
+    line-height: 1.4em;
+    margin-bottom: 25px;
+}
+
+.user-post {
+    width: 100%;
+    line-height: 1.4em;
+    font-size: 14px;
+    color: cadetblue;
+}
