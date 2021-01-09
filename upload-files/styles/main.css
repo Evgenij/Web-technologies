@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.area-files {
+    margin: auto;
+    width: 50%;
+    height: 30vh;
+    border: 2px dashed #ccc;
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.area-drag-file {
+    border-color: rgb(90, 163, 247);
+    color: rgb(90, 163, 247);
+}
+
+.uploaded-files{
+    display: flex;
+}
+
+.file {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+}
+
+.file__icon{
+    width: 25px;
+    height: auto;
+    margin: auto;
+}
+
+.file__name{
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+.btn-close{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(209, 70, 70);
+    padding: 5px;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: rgb(231, 114, 114);
+    position: absolute;
+    left: 80%;
+    top: -10%;
+    cursor: pointer;
+}
+.btn-close::after {
+    content: 'x';
+    color: rgb(134, 40, 40);
+    font-weight: bold;
+    top: 2px;
+    left: 5px;
+    position: absolute;
+}
+
+button {
+    margin-top: 30px;
+    padding: 1.2em 1.6em;
+    cursor: pointer;
+}
