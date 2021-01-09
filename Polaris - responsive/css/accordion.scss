@@ -1,0 +1,57 @@
+@import 'variables.scss';
+
+.accordion__button {
+    padding: 15px 0px;
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 1.3em;
+
+    &:hover{
+        color: $mainColor;
+    }
+}
+
+
+.accordion__button::before,
+.accordion__button::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    background-color: $mainColorText;
+    right: -10px;
+    top: 50%;
+    margin-top: -1px;
+    transition: 0.3s;
+}
+
+.accordion__button::before {
+    transform: rotate(45deg);
+}
+
+.accordion__button::after {
+    transform: rotate(-45deg) translate(3px, 3px);
+}
+
+.accordion__button.active::before {
+    transform: rotate(-45deg);
+}
+
+.accordion__button.active::after {
+    transform-origin: right bottom;
+    transform: rotate(45deg) translate(3px, 0px);
+}
+
+.accordion__data {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
